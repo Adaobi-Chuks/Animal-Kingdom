@@ -127,7 +127,7 @@ class AVES extends Backbone {
     }
 }
 
-class Mammals extends Backbone {
+class Mammal extends Backbone {
     constructor(name, type) {
         super(name, type);
         this.bloodTemp("warm");
@@ -148,7 +148,7 @@ const zig = new Fish("Zig", "Catfish");
 const slip = new Amphibia("Slip", "Frog");
 const flip = new Reptile("Fly", "Totise");
 const birdie = new AVES("Birdie", "Eagle");
-const nala = new Mammals("Nala", "Cat");
+const nala = new Mammal("Nala", "Cat");
 
 const animals = [taz, zig, slip, flip, birdie, nala];
 animals.forEach(animal => {console.log(animal.allProperties()) + "\n"});
