@@ -83,5 +83,5 @@ My name is Fly.
 I am a Tortoise.
 I belong to class Reptile.
 I have a backbone and I am cold blooded.
-My class has the longest life span.\
+My class has the longest life span.
 ```
