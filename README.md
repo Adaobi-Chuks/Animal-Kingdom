@@ -28,17 +28,60 @@ Polymorphism was used to enforce method overriding in to classes that had differ
 Encapsulation was used to improve code security by making some methods and properties of an object private.
 
 # How To Use
-
 - clone the repo and cd into the directory such that you are on `Animal Kingdom`
 - To run the solution, make sure you have [nodejs](https://nodejs.org/) installed
 - use the following command terminal
 ```
-# run statistics.js
-node statistics.js
+# run AnimalKingdom.js
+node AnimalKingdom.js
 ```
 - You can play around with the code to see what the class can and cannot do
 
 # Expected Output
-What the project does
-Why the project is useful
-How users can get started with the project
+If the AnimalKingdom.js is run as it is on this repository, the results look like this:
+```
+--> Animal Kingdom> node .\AnimalKingdom.js
+My name is Taz.
+I am a Butterfly.
+I belong to class Arthropoda.
+I have no backbone and I am cold blooded.     
+My class is the only class without a backbone.
+
+My name is Zig.
+I am a Catfish.
+I belong to class Fish.
+I have a backbone and I am cold blooded.
+I cannot live without water.
+
+My name is Slip.
+I am a Frog.
+I belong to class Amphibia.
+I have a backbone and I am cold blooded.
+I live both in water and in land.
+
+My name is Fly.
+I am a Totise.
+I belong to class Reptile.
+I have a backbone and I am cold blooded.
+My class has the longest life span.
+
+My name is Birdie.
+I am a Eagle.
+I belong to class AVES.
+I have a backbone and I am warm blooded.
+I have no teeth.
+
+My name is Nala.
+I am a Cat.
+I belong to class Mammal.
+I have a backbone and I am warm blooded.
+I have 4 limbs.
+
+OOPS!!! I MISSPELLED TORTISE
+
+My name is Fly.
+I am a Tortoise.
+I belong to class Reptile.
+I have a backbone and I am cold blooded.
+My class has the longest life span.\
+```
