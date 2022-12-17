@@ -35,7 +35,6 @@ Encapsulation was used to improve code security by making some methods and prope
 - To run the solution, make sure you have [nodejs](https://nodejs.org/) installed.
 - Use the following command in your terminal.
 ```
-# run AnimalKingdom.js
 node AnimalKingdom.js
 ```
 - You can play around with the code to see what the class can and cannot do.
