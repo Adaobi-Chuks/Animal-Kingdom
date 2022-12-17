@@ -11,19 +11,19 @@ OOP paradigms were used to model this simple class to avoid repetition of code a
 
 They include:
 
-## 1. Inheritance
+### 1. Inheritance
 
 An animal Parent class was created which all the classes inherited from to avoid re-implementing the same functionality, to make the code simplified making it easier to make changes to the code, and it allowed me to make use of another OOP paradign 'Polymorphism'.
 
-## 2. Abstraction
+### 2. Abstraction
 
 Abstract methods were used in the neccessary places to prevent misuse of some classes.
 
-## 3. Polymorphism
+### 3. Polymorphism
 
 Polymorphism was used to enforce method overriding in to classes that had different but similar methods.
 
-## 4. Encapsulation
+### 4. Encapsulation
 
 Encapsulation was used to improve code security by making some methods and properties of an object private.
 
