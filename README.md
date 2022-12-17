@@ -1,8 +1,8 @@
 # Animal-Kingdom
 
 This file contains the following:
-- `Class Diagram.pdf`: This is the class diagram for the Animal classification as shown in the diagram below. It was done to serve as a reference while writing the code to avoid potential errors and to show a visual representation of the code.
-- `AnimalKingdom.js`: This [code file](AnimalKingdom.js) models a simple Animal Kingdom class as shown in the [Class diagram](Class Diagram.pdf).
+- `ClassDiagram.pdf`: This is the class diagram for the Animal classification as shown in the diagram below. It was done to serve as a reference while writing the code to avoid potential errors and to show a visual representation of the code.
+- `AnimalKingdom.js`: This [code file](AnimalKingdom.js) models a simple Animal Kingdom class as shown in the [Class diagram](ClassDiagram.pdf).
 
 ![Animal Kingdom Classification](https://cdn1.byjus.com/wp-content/uploads/2019/04/Animal-Kingdom-Classification-of-Animal-Kingdom.png)
 
