@@ -31,14 +31,14 @@ Polymorphism was used to enforce method overriding in to classes that had differ
 Encapsulation was used to improve code security by making some methods and properties of an object private.
 
 # How To Use
-- clone the repo and cd into the directory such that you are on `Animal Kingdom`
-- To run the solution, make sure you have [nodejs](https://nodejs.org/) installed
-- use the following command terminal
+- Clone the repo and cd into the directory such that you are in `Animal Kingdom`.
+- To run the solution, make sure you have [nodejs](https://nodejs.org/) installed.
+- Use the following command in your terminal.
 ```
 # run AnimalKingdom.js
 node AnimalKingdom.js
 ```
-- You can play around with the code to see what the class can and cannot do
+- You can play around with the code to see what the class can and cannot do.
 
 # Expected Output
 If the AnimalKingdom.js is run as it is on this repository, the results look like this:
