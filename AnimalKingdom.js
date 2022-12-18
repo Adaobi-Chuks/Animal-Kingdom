@@ -1,4 +1,5 @@
 class Animal {
+
 //PRIVATE PROPERTIES
     #name;
     #type;
@@ -10,6 +11,7 @@ class Animal {
         this.#name = name;
         this.#type = type;
     }
+
 //GETTERS AND SETTERS FOR THE PRIVATE FIELDS
     get name() {
         return this.#name;
@@ -26,6 +28,7 @@ class Animal {
     set type(type) {
         this.#type = type;
     }
+
 //METHOD THAT SETS THE BLOODTEMPERATURE PROPERTY INSTEAD OF REPEATING CODES
     bloodTemp(temp) {
         if(temp === "warm") {
@@ -34,15 +37,18 @@ class Animal {
             this["bloodTemp"] = "cold blooded";
         }
     }
+
 //PRIVATE METHOD THAT PRINTS EACH OBJECTS PROPERTY
     #myProperties() {
         const stg = (this.constructor.hasBackbone) ? "a" : "no";
         return `My name is ${this.name}.\nI am a ${this.type}.\nI belong to class ${this.constructor.name}.\nI have ${stg} backbone and I am ${this["bloodTemp"]}.`
     }
+
 //PUBLIC METHOD THAT GETS THE PRIVATE myProperties() METHOD
     get myProperties() {
         return this.#myProperties;
     }
+
 //ABSTRACT METHOD THAT MUST BE OVERRIDEN IN THE CHILD CLASSES BEFORE USE
     allProperties() {
         throw new Error("The myProperties() method must be overriden in a subclass");
@@ -51,6 +57,7 @@ class Animal {
 
 //SUB-CLASSES OF THE Animal PARENT CLASS
 class NoBackbone extends Animal {
+
     static hasBackbone = false;
 
     constructor(name, type) {
@@ -62,6 +69,7 @@ class NoBackbone extends Animal {
 }
 
 class Backbone extends Animal {
+
     static hasBackbone = true;
 
     constructor(name, type) {
@@ -71,8 +79,10 @@ class Backbone extends Animal {
         super(name, type);
     }
 }
+
 //CHILD CLASSES OF NoBackbone AND Backbone PARENT CLASSES
 class Arthropoda extends NoBackbone {
+
     constructor(name, type) {
         super(name, type);
         this.bloodTemp("cold");
@@ -84,6 +94,7 @@ class Arthropoda extends NoBackbone {
 }
 
 class Fish extends Backbone {
+
     constructor(name, type) {
         super(name, type);
         this.bloodTemp("cold");
@@ -95,17 +106,19 @@ class Fish extends Backbone {
 }
 
 class Amphibia extends Backbone {
+
     constructor(name, type) {
         super(name, type);
         this.bloodTemp("cold");
     }
 
     allProperties() {
-        return this.myProperties() + "\nI live both in water and in land.\n";
+        return this.myProperties() + "\nI live both in water and on land.\n";
     }
 }
 
 class Reptile extends Backbone {
+
     constructor(name, type) {
         super(name, type);
         this.bloodTemp("cold");
@@ -117,6 +130,7 @@ class Reptile extends Backbone {
 }
 
 class AVES extends Backbone {
+
     constructor(name, type) {
         super(name, type);
         this.bloodTemp("warm");
@@ -128,6 +142,7 @@ class AVES extends Backbone {
 }
 
 class Mammal extends Backbone {
+
     constructor(name, type) {
         super(name, type);
         this.bloodTemp("warm");
@@ -137,6 +152,7 @@ class Mammal extends Backbone {
         return this.myProperties() + "\nI have 4 limbs.\n";
     }
 }
+
 // // CANNOT CREATE THE FOLLOWING OBJECTS FROM ABSTRACT CLASSES
 // const animal = new Animal();
 // const noBackbone = new NoBackbone();
