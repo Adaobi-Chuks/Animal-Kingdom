@@ -113,7 +113,7 @@ class Amphibia extends Backbone {
     }
 
     allProperties() {
-        return this.myProperties() + "\nI live both in water and in land.\n";
+        return this.myProperties() + "\nI live both in water and on land.\n";
     }
 }
 
